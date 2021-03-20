@@ -1,20 +1,40 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Calculadora
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-item>
+    <ion-label class="ion-text-wrap"  >{{escribe}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label class="ion-text-wrap"  >{{resultado}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-button expand="block" (click)="escribir(n1)">{{n1}}</ion-button>
+    <ion-button expand="block"(click)="escribir(n2)" >{{n2}}</ion-button>
+    <ion-button expand="block" (click)="escribir(n3)">{{n3}}</ion-button>
+    <ion-button expand="block" (click)="escribir(suma)">{{suma}}</ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-button expand="block" (click)="escribir(n4)">{{n4}}</ion-button>
+    <ion-button expand="block" (click)="escribir(n5)">{{n5}}</ion-button>
+    <ion-button expand="block" (click)="escribir(n6)">{{n6}}</ion-button>
+    <ion-button expand="block" (click)="escribir(resta)">{{resta}}</ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-button expand="block" (click)="escribir(n7)">{{n7}}</ion-button>
+    <ion-button expand="block" (click)="escribir(n8)">{{n8}}</ion-button>
+    <ion-button expand="block" (click)="escribir(n9)">{{n9}}</ion-button>
+    <ion-button expand="block" (click)="escribir(multiplicacion)">{{multiplicacion}}</ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-button expand="block" (click)="escribir(division)">{{division}}</ion-button>
+    <ion-button expand="block" (click)="escribir(n2)">{{n0}}</ion-button>
+    <ion-button expand="block" (click)="calcular()">Igual</ion-button>
+    
+  </ion-item>
 </ion-content>
